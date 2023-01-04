@@ -57,7 +57,7 @@ export default {
         });
 
         res.on('end', () => {
-          resolve({ status: res.statusCode, data: type.?indexOf('application/json') === 0 ? JSON.parse(response) : response, type });
+          resolve({ status: res.statusCode, data: type.indexOf('application/json') === 0 ? JSON.parse(response) : response, type });
         });
 
         res.on('error', err => {
