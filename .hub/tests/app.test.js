@@ -56,6 +56,7 @@ describe("Usage of Async/Await", () => {
 
     expect(code.indexOf("async")).toBeGreaterThan(-1);
     expect(code.indexOf("await")).toBeGreaterThan(-1);
-    expect(code.indexOf(".then(product")).toBe(-1);
+    expect(code.indexOf("try")).toBeGreaterThan(-1);
+    expect(code.indexOf("catch")).toBeGreaterThan(-1);
   });
 });
